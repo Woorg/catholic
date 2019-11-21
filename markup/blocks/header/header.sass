@@ -6,20 +6,29 @@
   &__container
     padding-top: 15px
     padding-bottom: 16px
-    background: #FFF 
+    
+
     display: flex
     align-items: center
     flex-wrap: nowrap
+    background: #FFF 
+
     
     @include r(1104px)
+    
       flex-wrap: wrap
+      justify-content: center
     
   &__logo
     margin-right: auto
     flex-shrink: 0
+    
+    @include r(1104px)
+      margin-right: auto
+      margin-left: auto
+    //   margin-left: auto
+    //   margin-right: auto
 
-    @include r(950px)
-      margin-right: 50px    
 
   &__nav
     margin-left: 30px

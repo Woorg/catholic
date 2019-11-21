@@ -1,14 +1,22 @@
 .institutes
   &__container
-    padding-top: $padding 
+    padding-top: 75px 
     padding-bottom: $padding 
   // &__title
 
-  // &__list
+  &__list
+    @include r(768px)
+      flex-wrap: wrap
     
   &__item
     margin-right: 30px
     width: 31.5%
+    
+    @include r(768px)
+      margin-right: 0
+      margin-bottom: 30px
+      width: 100%
+
     &:last-child
       margin-right: 0
   &__link
@@ -34,7 +42,7 @@
   
 
   &__category
-    margin-bottom: 16px
+    margin-bottom: 8px
     color: #ffffff
     font-size: 11px
     font-style: italic

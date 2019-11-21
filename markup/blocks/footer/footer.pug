@@ -1,7 +1,126 @@
 mixin footer(data)
   footer.footer
     .footer__body
-      .footer__container.container
+      .footer__container.container.row.row_start
+        
+        .footer__col
+          a.footer__logo.logo.logo_second(href="#")
+            span.logo__title Римско-католическая Преображенская епархия 
+            span.logo__city в Новосибирске
+          .footer__text.text Краткая информация о чем и для чего был создан сайт. Краткая информация о чем и для чего был создан сайт. 
+          
+          .footer__address.text г. Москва, ул. Киевская 17 info@gmail.com 
+            a.link(href="tel:+7804444444") +780-444-44-44
+
+          ul.footer__social.social.social_second
+            li.social__item
+              a.social__link(href="#") 
+                != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'social__icon', iconWidth: '14', iconHeight: '11'})  
+
+            li.social__item
+              a.social__link(href="#") 
+                != pugHelpers.Icon.call(locals, {iconName: 'facebook-icon', className: 'social__icon', iconWidth: '8', iconHeight: '14'})  
+
+            li.social__item
+              a.social__link(href="#") 
+                != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'social__icon', iconWidth: '14', iconHeight: '11'})  
+
+            li.social__item
+              a.social__link(href="#") 
+                != pugHelpers.Icon.call(locals, {iconName: 'facebook-icon', className: 'social__icon', iconWidth: '8', iconHeight: '14'})  
+      
+        .footer__col
+           nav.footer__nav.nav.nav_second
+            ul.nav__list
+              li.nav__item
+                a.nav__link.link(href="#") Новости
+              li.nav__item
+                a.nav__link.link(href="#") Анонсы событий
+              li.nav__item
+                a.nav__link.link(href="#") Епархиальные СМИ
+
+                ul.nav-sub.nav-sub_second
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") КАНА
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") СКГ
+
+              li.nav__item
+                a.nav__link.link(href="#") Официальные документы
+                ul.nav-sub.nav-sub_second
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Святой Престол
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Документы римских первосвященников
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Епархиальные декреты
+
+
+              li.nav__item
+                a.nav__link.link(href="#") Приходы
+
+        .footer__col
+           nav.footer__nav.nav.nav_second
+            ul.nav__list
+              li.nav__item
+                a.nav__link.link(href="#") Духовность Церкви
+                ul.nav-sub.nav-sub_second
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Намерения Святого Отца
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Основные молитвы
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Чин святой Мессы
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Литургическая тетрадка
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Литургий часов
+
+              li.nav__item
+                a.nav__link.link(href="#") Институты Посвященной Жизни
+                ul.nav-sub.nav-sub_second
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Мужские Институты
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Женские Институты
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Движения
+
+        .footer__col
+           nav.footer__nav.nav.nav_second
+            ul.nav__list
+              li.nav__item
+                a.nav__link.link(href="#") Социальное служение
+
+                ul.nav-sub.nav-sub_second
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Каритас
+
+              li.nav__item
+                a.nav__link.link(href="#") Католическая Церковь
+                
+                ul.nav-sub.nav-sub_second
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Святейший Отец
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Конференция епископов РФ
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Учебные заведения
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Епископ
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Епархиальные центры
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Комиссии Епархии
+                  li.nav-sub__item
+                    a.nav-sub__link.link(href="#") Деканаты
+
+              li.nav__item
+                a.nav__link.link(href="#") О нас
+
+              li.nav__item
+                a.nav__link.link(href="#") Контакты
+              
 
     .footer__bottom
       .footer__container.container

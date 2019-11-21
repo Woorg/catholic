@@ -4,20 +4,34 @@
   background-size: cover 
   
   &__container
-    padding-top: $padding
-    padding-bottom: $padding 
+    padding-top: 76px
+    padding-bottom: 50px
      
   // &__title
 
-  // &__row
+  &__row
+    @include r(768px)
+      flex-wrap: wrap
+    
+    @include r(500px)
+      justify-content: center
 
 
   &__col
     margin-right: 30px
     width: 22.9%
     
+    @include r(768px)
+      margin-right: 0
+      width: 50%
+      flex-grow: 1
+
+    @include r(500px)
+      margin-right: 0
+      // width: 100%
+
     &:last-child
       margin-right: 0
       
   &__parish
-    margin-bottom: 30px
+    margin-bottom: 22px

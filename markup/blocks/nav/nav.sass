@@ -1,7 +1,8 @@
 .nav
   position: relative
   display: flex
-
+  @include r(834px)
+    justify-content: center
   &__list
     width: 100%
     display: flex
@@ -10,20 +11,29 @@
     @include r(1104px)
       padding-top: 15px
       // padding-bottom: 15px
-      flex-wrap: nowrap
+      // flex-wrap: nowrap
+      justify-content: center
       // justify-content: space-between
       
     @include r(884px)
       justify-content: flex-start
+      flex-wrap: wrap
+      
+    @include r(834px)
+      max-width: 240px
+      justify-content: center
     
   &__item
-    margin-right: 20px
+    margin-right: 23px
     color: #333333
     font-size: 13px
     font-weight: 500
     line-height: 2
     @include tr(all .3s ease)
-  
+    
+    @include r(834px)
+      margin-right: 0
+      width: 100%
    
     &:hover
       .nav__link
@@ -36,8 +46,9 @@
       display: none
   &__item_more
 
-    @include r(884px)
-      margin-left: auto
+    // @include r(884px)
+    //   margin-left: auto
+    
     .nav__link
       padding-right: 12px
     .nav__link-icon
@@ -45,7 +56,11 @@
       top: 50%
       right: 0
       transform: translate(0,-50%)
-  
+      
+      @include r(834px)
+        right: auto
+        left: 50px
+        
     &:hover
       .nav-sub
         top: 100%
@@ -53,7 +68,10 @@
         display: block
         transform: rotateX(0deg)
         transform-style: preserve-3d
-
+      
+        @include r(834px)
+          right: auto
+          left: 0
 
   &__item_active
     .nav__link
@@ -71,6 +89,9 @@
     text-decoration: none
     @include tr(all .3s ease)
     
+    @include r(834px)
+      white-space: normal
+    
     &:before
       position: absolute
       top: calc(50% + 1px)
@@ -86,6 +107,39 @@
       color: lighten(#333, 30) 
 
 
+.nav_second
+  display: block
+  .nav__list
+    display: block
+  
+  .nav__item
+    margin-right: 0
+    margin-bottom: 20px
+    color: #ffffff
+    font-size: 15px
+    font-weight: 500
+    line-height: 1.538
+    
+    &:last-child
+      margin-bottom: 0
+    
+    ul
+      display: block
+      
+  .nav__link
+    margin-bottom: 7px
+    padding-left: 0
+    font-size: 15px
+    line-height: 1.538
+    letter-spacing: 0
+    white-space: normal
+    &:before
+      display: none
+
+
+
+
+
 .nav-sub
   position: absolute
   padding-top: 15px
@@ -97,6 +151,10 @@
   text-align: right
   background: #f7f3e7
   @include tr(all .3s ease)
+  
+  @include r(834px)
+    text-align: left
+    
   &__item,
   li
     margin-right: 0
@@ -109,6 +167,10 @@
     padding-left: 0
     color: inherit 
     white-space: normal
+    @include r(834px)
+      padding-right: 0
+      padding-left: 12px
+
     &:hover
       color: lighten(#333, 30) 
     
@@ -123,3 +185,34 @@
       background: #fab000
       border-radius: 50%
       transform: translateY(-50%)
+      
+      @include r(834px)
+        right: auto
+        left: 0
+      
+
+.nav-sub_second
+  position: static
+  margin-bottom: 28px
+  padding-top: 0
+  padding-right: 0
+  padding-bottom: 0
+  padding-left: 0
+  max-width: 100%
+  display: block  
+  text-align: left
+  background: transparent 
+
+  .nav-sub__item
+    margin-bottom: 12px
+    color: #c9c9c9
+  
+  .nav-sub__link
+    padding-right: 0
+    display: block
+    font-size: 13px
+    font-weight: 300 
+    line-height: 1.538
+    &:before  
+      display: none
+

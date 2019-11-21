@@ -1,6 +1,11 @@
 .hero
   position: relative
-  // &__container
+  &__container
+    height: 600px
+    
+    @include r(834px)
+      height: auto
+      flex-wrap: wrap
     
   &__welcome
     max-width: 1230px
@@ -8,6 +13,9 @@
   &__latest-news
     margin-left: 30px
     max-width: 255px
-    width: 100%  
-
-  
+    width: 100%
+    
+    @include r(834px)
+      margin-top: 30px
+      margin-left: 0
+      max-width: 100%

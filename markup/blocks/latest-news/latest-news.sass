@@ -1,13 +1,18 @@
 .latest-news
   border-top: 1px solid #fab000 
   // padding-top: 0
-  padding-top: 38px
+  padding-top: 45px
   overflow: hidden
-  
+  @include r(834px)
+    border-bottom: 1px solid #fab000
+    padding-bottom: 45px
+  //   padding-top: 0
+    
   &__slider
     position: relative
+    // margin-top: 45px
     height: 100%
-    overflow: hidden
+    // overflow: hidden
 
 
   &__article
@@ -40,7 +45,7 @@
 
   .slick-arrow
     width: 100%
-    height: 30px
+    height: 40px
     background-color: #ffffff
     &:before
       display: none
@@ -68,7 +73,7 @@
   .slick-next
     top: auto
     // bottom: -14px
-    bottom: -4px
+    bottom: -20px
     right: 0
     left: 0
     

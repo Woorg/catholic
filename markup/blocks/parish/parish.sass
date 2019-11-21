@@ -1,6 +1,6 @@
 .parish
   &__letter
-    margin-bottom: 14px
+    margin-bottom: 15px
     width: 30px
     height: 30px
     background-color: #1b242c
@@ -11,12 +11,22 @@
     text-align: center
     border-radius: 50%
   // &__list
+  
 
   &__list
     font-size: 14px
     font-weight: 300
-    line-height: 2.142
+    line-height: 1
     
+  &__item
+    margin-bottom: 8px
+    &:last-child
+      margin-bottom: 0
+    
+  &__title
+    line-height: 1.6
+    
+
   &__title
     &:hover
       color: lighten(#333, 10) 

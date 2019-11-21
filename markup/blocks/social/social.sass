@@ -11,8 +11,8 @@
   &__link
     position: relative
     border: 1px solid #1b242c
-    width: 28px
-    height: 28px
+    width: 30px
+    height: 30px
     display: block
     color: #1B242C
     text-align: left
@@ -30,3 +30,18 @@
     fill: #1b242c
     transform: translate(-50%, -50%)
     @include tr(all .3s ease)
+    
+
+
+.social_second
+  .social__link
+    border: 1px solid #fab000
+    color: #FAB000
+    &:hover
+      border: 1px solid lighten(#fab000, 10)
+      color: lighten(#fab000, 10)
+      .social__icon
+        fill: lighten(#fab000, 10)
+
+  .social__icon
+    fill: #fab000

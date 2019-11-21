@@ -1,9 +1,9 @@
 .articles
   &__container
-    padding-top: $padding
+    padding-top: 76px
     padding-bottom: $padding
   &__title
-    margin-bottom: 40px
+    margin-bottom: 45px
 
   // &__grid
 
@@ -11,12 +11,26 @@
     // margin-bottom: 30px
     @include cf()
     
+    @include r(1077px)
+      display: flex
+      align-items: flex-start
+      flex-wrap: wrap
+      
+      
+    
   &__grid-bottom
     margin-bottom: 30px
+    
+    @include r(768px)
+      flex-wrap: wrap
     
     .articles__article
       margin-right: 30px
       margin-bottom: 0
+      
+      @include r(768px)
+        margin-right: 0
+        margin-bottom: 30px
     
       &:last-child
         margin-right: 0
@@ -24,6 +38,9 @@
   &__article
     margin-bottom: 30px
     float: left
+    
+    @include r(1077px)
+      float: none
     
   &__article_big
     margin-right: 30px

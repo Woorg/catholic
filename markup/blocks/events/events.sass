@@ -3,10 +3,10 @@
   background-color: #F2EDE1 
   background-size: cover
   &__container
-    padding-top: $padding
+    padding-top: 75px 
     padding-bottom: $padding  
   &__top
-    margin-bottom: 40px
+    margin-bottom: 45px
     align-items: center
     
   &__title
@@ -26,6 +26,8 @@
 
   &__list
     align-items: flex-start
+    @include r(768px)
+      flex-wrap: wrap
 
   &__item
     border: 1px solid #1b242c
@@ -39,6 +41,11 @@
     flex-direction: column
     
     background-color: #f7f3e7
+    @include r(768px)
+      margin-right: 0
+      margin-bottom: 30px
+      width: 100%
+
     // &:nth-child(even)
     //   padding-bottom: 30px
 
@@ -47,6 +54,7 @@
       
       
   &__date
+    margin-bottom: 5px
     padding-bottom: 24px
     color: #1b242c
     font-size: 14px
@@ -63,7 +71,7 @@
       background-color: #1b242c
 
   &__item-title
-    margin-bottom: 15px
+    margin-bottom: 8px
     color: inherit 
     font-size: 16px
     font-weight: 500
