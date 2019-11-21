@@ -1,0 +1,36 @@
+mixin about-us(data)
+  section.about-us
+    .about-us__container.container
+      .about-us__image
+        img.lazy(data-src='assets/images/general/about-image.png' data-srcset='assets/images/general/about-image@2x.png 2x, assets/images/general/about-image@3x.png 3x' alt="")
+
+      .about-us__w
+        h2.about-us__title.title О нашей компании
+      
+
+        .about-us__text.wysiwyg
+          p Рейтинг исключительно оправдывает пак-шот, используя опыт предыдущих кампаний. Лидерство в продажах естественно создает обществвенный стратегический рыночный план. В общем, рекламная заставка требовальна к креативу. Интересно отметить, что психология восприятия рекламы вырождена. 
+
+          p Согласно ставшей уже классической работе Филипа Котлера, повышение жизненных стандартов усиливает клиентский спрос. Наряду с этим, селекция бренда редко соответствует рыночным ожиданиям.
+
+        .about-us__registered
+          h3.about-us__registered-title Зарегистрировано в
+            span  Великобритании
+            != pugHelpers.Icon.call(locals, {iconName: 'kingdom', className: 'about-us__registered-icon', iconWidth: '40', iconHeight: '40'}) 
+          dl.about-us__list
+            .about-us__item
+              dt.about-us__term Названия
+                != pugHelpers.Icon.call(locals, {iconName: 'corp-icon', className: 'about-us__icon', iconWidth: '15', iconHeight: '15'})
+
+              dd.about-us__desc – CryptoMining LTD
+            .about-us__item
+              dt.about-us__term Адрес
+                != pugHelpers.Icon.call(locals, {iconName: 'address-icon', className: 'about-us__icon', iconWidth: '10', iconHeight: '13'})
+              dd.about-us__desc – Intershore Chambers, Road Town, Tortola, British Virgin Islands 12 
+            .about-us__item
+              dt.about-us__term Номер компании
+                .about-us__icon №
+              dd.about-us__desc 12223168 
+
+          a.about-us__button.button.button_secondary(href="#check") Проверить
+

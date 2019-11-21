@@ -1,0 +1,68 @@
+.cta
+  background-position: 100% 0
+  background-repeat: no-repeat
+  background-size: cover
+  background-color: #2a4941
+  &__container
+    position: relative
+    padding-top: 40px
+    padding-bottom: 40px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    flex-wrap: wrap
+    color: #fff 
+    text-align: left
+  
+  &__title
+    position: relative
+    padding-left: 100px
+    color: #ffffff
+    font-size: 23px
+    font-weight: 500
+    line-height: 1.5
+    
+    @include r(852px)
+      margin-right: auto
+      margin-bottom: 30px
+      margin-left: auto
+      width: 100%
+  
+    @include r(578px)
+      padding-left: 0
+      text-align: center
+      
+
+    @include r(425px)
+      font-size: 26px
+      
+    
+    em
+      display: block
+      font-size: 40px
+      @include r(578px)
+        font-size: 28px
+
+    span
+      color: #2dc976
+      
+  &__icon
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+    
+    @include r(578px)
+      display: none
+    
+  &__button
+    margin-left: auto
+    padding-top: 20px
+    padding-left: 40px
+    padding-right: 40px
+    height: 54px
+    border-radius: 25px
+    
+    @include r(852px)
+      margin-right: auto
+      margin-left: auto

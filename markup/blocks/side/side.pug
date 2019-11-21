@@ -1,0 +1,37 @@
+mixin side(data)
+  aside.side&attributes(attributes)
+
+    .side__balance
+      .side__balance-title Баланс
+      a.side__button.button.button_w_arrow(href="#") Пополнить
+      .side__total.rounds.rounds_side
+        .rounds__round
+        .rounds__round.rounds__round_2
+        .rounds__round.rounds__round_3
+          .side__total-val 1200
+          .side__total-text FM/
+            sub s
+
+    .side__nav.side-nav
+      nav.side-nav
+        ul.side-nav__list
+          li.side-nav__item.side-nav__item_mining
+            a.side-nav__link(href="#") Майнинг
+              != pugHelpers.Icon.call(locals, {iconName: 'minings-icon', className: 'side-nav__icon', iconWidth: '15', iconHeight: '15'})
+          li.side-nav__item
+            a.side-nav__link(href="#") Платежи
+              != pugHelpers.Icon.call(locals, {iconName: 'payments-icon', className: 'side-nav__icon', iconWidth: '21', iconHeight: '14'})
+          li.side-nav__item.side-nav__item_withdraw
+            a.side-nav__link(href="#") Вывод заработка
+              .side-nav__icon
+          li.side-nav__item
+            a.side-nav__link(href="#") Партнерская программа
+              != pugHelpers.Icon.call(locals, {iconName: 'affiliate-icon', className: 'side-nav__icon', iconWidth: '18', iconHeight: '16'})
+          li.side-nav__item
+            a.side-nav__link(href="#") Тикет система
+              != pugHelpers.Icon.call(locals, {iconName: 'ticket-icon', className: 'side-nav__icon', iconWidth: '15', iconHeight: '16'})
+          li.side-nav__item
+            a.side-nav__link(href="#") Профайл
+              != pugHelpers.Icon.call(locals, {iconName: 'person-icon', className: 'side-nav__icon', iconWidth: '18', iconHeight: '18'})
+
+    

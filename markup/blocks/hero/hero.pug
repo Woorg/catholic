@@ -1,0 +1,6 @@
+mixin hero(data)
+  .hero.lazy&attributes(attributes)
+    .hero__container.container.row.row_start
+      +welcome().hero__welcome
+      +latest-news().hero__latest-news
+    //- (data-bg="url('assets/images/general/hero-bg.jpg')")

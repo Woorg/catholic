@@ -1,0 +1,64 @@
+.article
+  &__link
+    position: relative
+    display: block
+    color: inherit 
+    text-decoration: none
+  &__title-w
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    padding-left: 40px
+    padding-right: 40px
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    background: rgba(27,36,44, .9) 
+    
+  &__title
+    position: absolute
+    top: 50%
+    left: 40px
+    padding-bottom: 15px
+    color: #fab000
+    font-size: 16px
+    font-weight: 300
+    line-height: 1.6875
+    letter-spacing: -0.16px
+    transform: translateY(-50%)
+    
+    &:after
+      position: absolute
+      top: 100%
+      left: 0
+      content: ""
+      width: 65px
+      height: 1px
+      background-color: #fab000 
+      
+      
+  &__image
+    font-size: 0
+
+
+
+.article_big
+  width: 57%
+  
+  .article__title-w
+    padding-top: 40px
+    min-height: 120px
+
+
+.article_medium
+  width: 40%
+  
+  .article__title-w
+    min-height: 120px
+
+.article_small
+  width: 31.4%
+  
+  .article__title-w
+    min-height: 95px

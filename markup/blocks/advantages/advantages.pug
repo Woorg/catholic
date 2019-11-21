@@ -1,0 +1,32 @@
+mixin advantages(data)
+  section.advantages
+    .advantages__container.container
+      h2.advantages__title.title Преимущества сервиса 
+       
+
+      ul.advantages__list
+        li.advantages__item.advantages__item_1
+          != pugHelpers.Icon.call(locals, {iconName: 'bonus-icon', className: 'advantages__icon', iconWidth: '58', iconHeight: '59'}) 
+
+          .advantages__item-title Бонус <br/>за регистрацию 
+            span 1 $
+            
+        li.advantages__item.advantages__item_2
+          != pugHelpers.Icon.call(locals, {iconName: 'mining-icon', className: 'advantages__icon', iconWidth: '61', iconHeight: '55'}) 
+          .advantages__item-title Майнинг Litecoin, <br/>Dogecoin, USD
+        
+        li.advantages__item.advantages__item_3
+          != pugHelpers.Icon.call(locals, {iconName: 'payment-icon', className: 'advantages__icon', iconWidth: '61', iconHeight: '55'}) 
+          .advantages__item-title Моментальные <br/>выплаты
+        
+        li.advantages__item.advantages__item_4
+          != pugHelpers.Icon.call(locals, {iconName: 'server-icon', className: 'advantages__icon', iconWidth: '44', iconHeight: '43'}) 
+          .advantages__item-title Выделенный <br/>сервер
+        
+        li.advantages__item.advantages__item_5
+          != pugHelpers.Icon.call(locals, {iconName: 'british-company-icon', className: 'advantages__icon', iconWidth: '62', iconHeight: '60'}) 
+          .advantages__item-title Великобританская <br/>компания
+        
+        li.advantages__item.advantages__item_6
+          != pugHelpers.Icon.call(locals, {iconName: 'certificate-icon', className: 'advantages__icon', iconWidth: '56', iconHeight: '51'}) 
+          .advantages__item-title SSL certificate

@@ -1,0 +1,84 @@
+mixin calc(data)
+  section.calc
+    .calc__container.container
+      h2.calc__title.title Калькулятор заработка
+        
+        span.calc__rounds
+          span.calc__round
+          span.calc__round.calc__round_2
+          span.calc__round.calc__round_3
+          //- .calc__icon-w
+          != pugHelpers.Icon.call(locals, {iconName: 'calc-icon', className: 'calc__icon', iconWidth: '38', iconHeight: '38'})
+
+      .calc__w
+        .calc__form-title Рассчитайте сумму инвестиций
+        form.calc__form.form.form_calc(action="#", method="post")
+          .form__row
+            .form__field.form__field_price
+              label.form__label
+                span.form__label-text Введите сумму
+                input.form__input(type="text", value="", placeholder="0")
+                
+            .calc__coin-w
+              .calc__coin-label Выберите валюту которую будете добывать 
+        
+              .form__radio-w
+
+                .form__field.form__field_radio
+
+                  label.form__label
+                    input.form__radio(type="radio" name='coin' value='Litecoin' checked)
+                    span.form__label-text Litecoin
+                .form__field.form__field_radio
+                  label.form__label
+                    input.form__radio(type="radio" name='coin' value='Dogecoin')
+                    span.form__label-text Dogecoin
+                .form__field.form__field_radio
+                  label.form__label
+                    input.form__radio(type="radio" name='coin' value='USD')
+                    span.form__label-text USD
+
+          input.form__submit.button(type="submit", value="Рассчитать")
+      
+      .calc__result
+        .calc__result-coin
+          .calc__result-w
+            .calc__result-icon
+              img(src="assets/images/general/litecoin-icon.png", alt="")
+            .calc__result-title Litecoin
+        ul.calc__result-list
+          li.calc__result-item
+            // .calc__result-top
+            .calc__result-period 1 день
+            // .calc__result-bottom
+            .calc__result-val 0.0000600
+            
+          li.calc__result-item
+            // .calc__result-top
+            .calc__result-period 1 месяц
+            // .calc__result-bottom
+            .calc__result-val 0.0000600
+
+          li.calc__result-item
+            // .calc__result-top
+            .calc__result-period 3 месяца
+            // .calc__result-bottom
+            .calc__result-val 0.0000600
+
+          li.calc__result-item
+            // .calc__result-top
+            .calc__result-period 6 месяцев
+            // .calc__result-bottom
+            .calc__result-val 0.0000600
+
+          li.calc__result-item
+            // .calc__result-top
+            .calc__result-period 1 год
+            // .calc__result-bottom
+            .calc__result-val 0.0000600
+
+          li.calc__result-item
+            // .calc__result-top
+            .calc__result-period 2 года
+            // .calc__result-bottom
+            .calc__result-val 0.0000600

@@ -1,0 +1,71 @@
+// .content
+
+.blocks
+  margin-right: -30px
+  display: flex
+  justify-content: flex-start
+  align-items: flex-start
+  flex-wrap: wrap
+  
+  @include r(1024px)
+    margin-right: 0
+
+
+.noUi-target
+  height: 8px
+  border: none
+  margin: 0
+
+  .noUi-base
+    border: 1px solid #d1d1d1
+    background-color: #e1e1e1
+    cursor: pointer
+    border-radius: 15px
+    box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.16)
+    
+    .noUi-connects
+      border-radius: 4px
+      
+    .noUi-connect
+      background: #005651
+
+    .noUi-tooltip
+      bottom: -35px
+      color: #013a67
+      border: none
+      outline: none
+      font-weight: bold
+
+// @media screen and (max-width: 767px)
+//   .noUi-target
+//     margin: 40px 0 50px 0
+
+.noUi-handle.noUi-handle-lower
+  outline: none
+  border: none
+  right: 0px
+  top: -8px
+  width: 22px
+  height: 22px
+  background: #0fa656
+  cursor: pointer
+  border-radius: 50%
+  box-shadow: none
+  transition: all 0.3s ease-in-out
+
+  &.noUi-active
+    transform: scale(1.2)
+
+  &:before
+    display: none
+    
+  &:after
+    left: 6px
+    width: 10px
+    height: 10px
+    background: #fff
+    border-radius: 50% 
+
+  .noUi-touch-area
+    width: 22px
+    height: 22px

@@ -1,0 +1,109 @@
+.about-us
+  &__container
+    padding-top: 62px
+    padding-bottom: 37px
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    flex-wrap: wrap
+    
+    // @include r(900px)
+    //   flex-wrap: wrap
+      
+  &__image
+    position: relative
+    z-index: 1
+    margin-left: 82px
+    max-width: 342px
+    width: 100%
+    flex-shrink: 0
+    font-size: 0
+    
+    @include r(1160px)
+    
+      margin-left: 0
+    
+
+  &__w
+    margin-left: 93px
+    
+    @include r(1078px)
+      margin-left: 30px
+      
+    @include r(1015px)
+      margin-left: 0
+      
+
+  
+  
+
+  &__title
+    margin-bottom: 28px
+    
+  &__text
+    margin-bottom: 10px
+    max-width: 600px
+    font-size: 18px
+    font-weight: 400
+    line-height: 1.45
+    
+  &__registered
+    margin-top: 43px
+
+  &__registered-title
+    position: relative
+    margin-bottom: 26px
+    padding-left: 59px
+    color: #1e1e1e
+    font-size: 19px
+    font-weight: 500
+    line-height: 1
+    span
+      color: #0f9760
+      
+  &__registered-icon
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translateY(-50%)
+
+  &__list
+    margin-left: 64px
+  &__item
+    margin-bottom: 12px
+    display: flex
+    // align-items: center
+    align-items: flex-start
+    
+    font-size: 12px
+    font-weight: 400
+    line-height: 1
+    &:nth-child(2)
+      .about-us__icon
+        left: 2px
+    
+  &__term
+    position: relative
+    padding-right: 5px
+    padding-left: 21px
+    color: #9c9c9c
+
+  &__icon
+    position: absolute
+    top: 50%
+    left: 0
+    fill: #9f9f9f
+    color: #9f9f9f 
+    transform: translateY(-50%)
+
+  &__desc
+    color: #373737
+
+  &__button
+    margin-top: 10px
+    margin-left: 64px
+    padding-right: 30px
+    padding-left: 30px
+
+
+

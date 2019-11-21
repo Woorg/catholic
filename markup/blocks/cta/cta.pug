@@ -1,0 +1,10 @@
+mixin cta(data)
+  section.cta.lazy(data-bg="url('assets/images/general/cta-bg.jpg')")&attributes(attributes)
+    .cta__container.container
+      h2.cta__title 
+        em Зарегистрируйтесь 
+        | и получите 
+        span бонус 1$
+        != pugHelpers.Icon.call(locals, {iconName: 'cta-icon', className: 'cta__icon', iconWidth: '58', iconHeight: '59'})
+      
+      a.cta__button.button(href="#") Зарегистрироваться

@@ -1,0 +1,62 @@
+.welcome
+  position: relative
+  // min-height: 600px
+    
+  &__row
+    min-height: 600px
+
+  // &__col
+  //   margin-right: 30px
+    
+  &__col_first
+    position: relative
+    // padding-top: 187px
+    padding-right: 64px
+    // padding-bottom: 187px
+    width: 53%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    
+    &:after
+      position: absolute
+      z-index: -1
+      top: 0
+      right: 0
+      content: ""
+      width: 850px
+      height: 100%
+      background-color: #1b242c
+      opacity: 0.9
+
+  &__col_second
+    position: relative
+    width: 46%
+    
+  &__image
+    position: absolute
+    z-index: -2
+    top: 0
+    right: 0
+    width: 1230px
+    height: 100%
+    
+  &__title
+    margin-bottom: 38px
+    color: #fab000
+    font-size: 38px
+    font-weight: 300
+    line-height: 1
+    letter-spacing: -0.38px
+  &__text
+    position: relative
+    padding-bottom: 40px
+    color: #ffffff
+    &:after
+      position: absolute
+      top: 100%
+      left: 0
+      content: ""
+      width: 66px
+      height: 1px
+      background-color: #fab000

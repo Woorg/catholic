@@ -1,0 +1,163 @@
+.advantages
+  // background: url('../images/general/advantages-bg.png') calc(0% - 1px) calc(100% + 133px) no-repeat 
+  overflow: hidden
+  &__container
+      position: relative
+      padding-top: 78px
+      padding-bottom: 70px
+      &:after
+        position: absolute
+        z-index: -1
+        bottom: -3px
+        left: -168px
+        width: 1512px
+        height: 661px
+        content: "" 
+        background: url('../images/general/advantages-bg.png') calc(0% - 1px) calc(100% + 133px) no-repeat 
+        @include r(1112px)
+          display: none
+  &__title
+    margin-bottom: 55px
+    text-align: center
+    &:after
+      left: 50%
+      transform: translateX(-50%)
+
+  &__list
+    margin-left: 15px
+    max-width: 1126px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+    @include r(1112px)
+      margin-left: 0
+      max-width: 100%
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: flex-start
+
+  &__item
+    position: relative
+    padding-bottom: 21px
+    max-width: 160px
+    width: 100%
+    font-weight: 600
+    text-align: left
+    @include r(1112px)
+      margin-bottom: 30px
+      max-width: 33%
+      text-align: center
+    @include r(586px)
+      max-width: 50%
+    
+    @include r(425px)
+      max-width: 100%
+
+
+    &:after,
+    &:before
+      position: absolute
+      top: 100%
+      left: 0
+      content: ""
+      width: 27px
+      height: 27px
+      box-shadow: 1px 2px 10px rgba(23, 46, 37, 0.19)
+      background-color: #09a868
+      border-radius: 50%
+      
+      @include r(1112px)
+        display: none
+        
+
+    &:before
+      top: calc(100% + 8px)
+      left: 8px
+      z-index: 1
+      width: 11px
+      height: 11px
+      background: #FFF 
+
+  &__item_1
+    margin-left: 13px
+    @include r(1112px)
+      margin-left: 0
+      padding-bottom: 0
+  &__item_2
+    margin-top: -55px
+    margin-left: 200px
+    padding-bottom: 32px
+    @include r(1112px)
+      margin-top: 0
+      margin-left: 0
+      padding-bottom: 0
+    .advantages__icon
+      margin-bottom: 13px
+      @include r(1112px)
+        margin-bottom: 30px
+      
+  &__item_3
+    margin-top: -76px
+    margin-left: 387px
+    padding-bottom: 40px
+    @include r(1112px)
+      margin-top: 0
+      margin-left: 0
+      padding-bottom: 0
+    .advantages__icon
+      margin-bottom: 4px
+      @include r(1112px)
+        margin-bottom: 30px
+
+  &__item_4
+    margin-top: -82px
+    margin-left: 565px
+    padding-bottom: 32px
+    @include r(1112px)
+      margin-top: 0
+      margin-left: 0
+      padding-bottom: 0
+    .advantages__icon
+      margin-bottom: 15px
+      @include r(1112px)
+        margin-bottom: 30px
+
+
+  &__item_5
+    margin-top: -94px
+    margin-left: 736px
+    @include r(1112px)
+      margin-top: 0
+      margin-left: 0
+      padding-bottom: 0
+    .advantages__icon
+      margin-bottom: 9px
+      @include r(1112px)
+        margin-bottom: 30px
+
+  &__item_6
+    margin-top: -76px
+    margin-left: 947px
+    @include r(1112px)
+      margin-top: 0
+      margin-left: 0
+      padding-bottom: 0
+    .advantages__icon
+      margin-bottom: 17px
+      @include r(1112px)
+        margin-bottom: 30px
+
+  &__icon
+    margin-bottom: 30px
+
+  &__item-title
+    align-items: bottom
+    font-size: 16px
+    font-weight: 500
+    line-height: 1.5625
+    
+    span
+      color: #09a868
+      font-weight: 500
+

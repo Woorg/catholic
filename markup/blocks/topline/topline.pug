@@ -1,0 +1,28 @@
+mixin topline(data)
+  .topline&attributes(attributes)
+    .topline__container.container.row.row_start
+      nav.topline__nav
+        ul.topline__list
+          li.topline__item
+            a.topline__link(href="#") О нас
+          li.topline__item
+            a.topline__link(href="#") Контакты
+          li.topline__item.topline__item_active
+            a.topline__link(href="#") Связаться с нами
+
+      ul.topline__social.social
+        li.social__item
+          a.social__link(href="#") 
+            != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'social__icon', iconWidth: '14', iconHeight: '11'})  
+
+        li.social__item
+          a.social__link(href="#") 
+            != pugHelpers.Icon.call(locals, {iconName: 'facebook-icon', className: 'social__icon', iconWidth: '8', iconHeight: '14'})  
+
+        li.social__item
+          a.social__link(href="#") 
+            != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'social__icon', iconWidth: '14', iconHeight: '11'})  
+
+        li.social__item
+          a.social__link(href="#") 
+            != pugHelpers.Icon.call(locals, {iconName: 'facebook-icon', className: 'social__icon', iconWidth: '8', iconHeight: '14'})  

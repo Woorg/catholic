@@ -1,0 +1,22 @@
+mixin events(data)
+  section.events.lazy(data-bg="url('assets/images/general/events-bg.png')")
+    .events__container.container
+      .events__top.row.row_start
+        h2.events__title.title Анонсы событий
+        a.events__all(href="#") Смотреть все анонсы
+      ul.events__list.row.row_start
+        li.events__item
+          a.events__date(href="#") 1 октября
+          a.events__item-title(href="#") Открытые лекции в Институте св. Фомы в марте
+          a.events__address(href="") г. Москва <br/>Институт св. Фомы
+            != pugHelpers.Icon.call(locals, {iconName: 'marker', className: 'events__address-icon', iconWidth: '10', iconHeight: '12'})
+        li.events__item
+          a.events__date(href="#") 9 марта - 13 апреля
+          a.events__item-title(href="#") Фестиваль «Великая музыка Великого поста»: 4 концерта
+          a.events__address(href="") г. Москва <br/>собор Непорочного Зачатия Пресвятой Девы Марии
+            != pugHelpers.Icon.call(locals, {iconName: 'marker', className: 'events__address-icon', iconWidth: '10', iconHeight: '12'})
+        li.events__item
+          a.events__date(href="#") 1 октября
+          a.events__item-title(href="#") Открытые лекции в Институте св. Фомы в марте
+          a.events__address(href="") г. Москва <br/>Институт св. Фомы
+            != pugHelpers.Icon.call(locals, {iconName: 'marker', className: 'events__address-icon', iconWidth: '10', iconHeight: '12'})

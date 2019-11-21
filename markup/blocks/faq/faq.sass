@@ -1,0 +1,84 @@
+.faq
+  position: relative
+  
+  
+  // &__list
+    
+  &__item
+    margin-bottom: 6px
+    &:last-child
+      margin-bottom: 0
+      
+  &__item_active
+    .faq__term
+      background-color: #156746
+      color: #FFF 
+      &:after
+        background: url('../images/general/faq-open.png') 0 0 no-repeat
+        transform: translateY(-50%) rotate(0deg)
+    .faq__desc
+      display: block
+      
+    .faq__term-icon
+      border: 2px solid #e6e6e6
+      background-color: #156746
+      color: #fff 
+      
+  &__term
+    position: relative
+    padding-top: 23px
+    padding-left: 74px
+    padding-right: 60px
+    padding-bottom: 21px
+    background-color: #f3f3f3
+    color: #000000
+    font-size: 17px
+    font-weight: 500
+    // line-height: 
+    cursor: pointer
+    border-radius: 10px
+    
+    &:after
+      position: absolute
+      z-index: 0
+      top: 50%
+      right: 26px
+      content: "" 
+      height: 15px
+      width: 17px
+      height: 11px
+      background: url('../images/general/faq-close.png') 0 0 no-repeat
+      background-size: cover 
+      transform: translateY(-50%)
+    
+  &__term-icon
+    position: absolute
+    top: 50%
+    left: 12px
+    border: 2px solid #e6e6e6
+    width: 36px
+    height: 36px
+    background-color: #f3f3f3
+    color: #156746
+    font-size: 17px
+    font-weight: 500
+    line-height: 32px
+    text-align: center
+    border-radius: 50%
+    transform: translateY(-50%)
+    
+  &__desc
+    border: 1px solid #e6e6e6
+    margin-top: 13px
+    margin-bottom: 13px
+    padding-top: 36px
+    padding-right: 36px
+    padding-bottom: 36px
+    padding-left: 36px
+    display: none
+    background-color: #ffffff
+    font-size: 13px
+    font-weight: 400
+    line-height: 24px
+    border-radius: 10px
+    box-shadow: 1px 2px 3px rgba(47, 47, 47, 0.08)

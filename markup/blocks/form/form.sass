@@ -1,0 +1,393 @@
+.form
+  // &__w
+  &__row
+    // margin-bottom: 12px
+    display: flex
+    flex-wrap: wrap
+
+    // @include r(1131px)
+    //   flex-direction: column
+    //   align-items: flex-start
+
+  &__field
+    position: relative
+    // margin-right: 40px
+    margin-bottom: 0
+    max-width: 170px
+    flex-grow: 1
+    display: flex
+    
+    @include r(1150px)
+      max-width: 100%    
+
+    //   margin-right: 0
+    //   margin-bottom: 20px
+    //   max-width: 100%
+    //   width: 100%
+    
+  &__field_price
+    &:after
+      position: absolute
+      bottom: 18px
+      right: 18px
+      content: "$"
+      color: #09a868
+      font-size: 14px
+      font-weight: 400
+      line-height: 1
+
+  &__field_input,
+  &__field_textarea
+    position: relative
+
+      
+    &:last-child
+      margin-right: 0
+      
+  &__field_textarea
+    margin-right: 0
+    max-width: 100%
+
+    
+  &__field_radio
+    margin-bottom: 20px
+    .form__label
+      display: flex
+      cursor: pointer
+      align-items: center
+      
+    .form__label-text
+      border: 1px solid transparent
+      margin-bottom: 0
+      padding-top: 5px
+      padding-right: 10px
+      padding-bottom: 7px
+      padding-left: 10px
+      color: #4b4b4b
+      font-size: 15px
+      font-weight: 500
+      line-height: 1
+      
+      border-radius: 18px
+     
+
+      
+  &__label
+    flex-grow: 1    
+
+    font-size: 14px
+    color: #b8b8b8
+    font-size: 12px
+    font-weight: 400
+    line-height: 1.333
+    
+  &__label-text
+    position: relative
+    margin-bottom: 8px
+    display: block
+    
+    
+  &__radio-w
+    margin-right: -23px
+    display: flex
+    align-items: center
+    
+    @include r(1174px)
+      margin-right: 0
+
+  &__radio
+    display: none
+    &:checked + .form__label-text
+      border: 1px solid #e0e0e0
+      background-color: #ffffff
+      color: #09a868
+      font-weight: 700
+      box-shadow: 1px 2px 4px rgba(13, 126, 81, 0.19)
+      @include tr(all .3s ease)
+    
+  &__input
+    @include resetbutton()
+    border: 1px solid #e0e0e0
+    padding-right: 30px
+    padding-left: 20px
+    width: 100%
+    height: 49px
+    background-color: #f4f4f4
+    color: #ababab
+    font-size: 14px
+    font-weight: 400
+    border-radius: 8px
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06)
+    
+    @include placeholder()
+      color: #ababab
+      
+      
+  &__textarea
+    @include resetbutton()
+    border: 1px solid #c8c8c8
+    padding-top: 15px
+    padding-right: 15px
+    padding-bottom: 15px
+    padding-left: 65px
+    width: 100%
+    height: 84px
+    background-color: #ffffff
+    color: #797979
+    font-size: 18px
+    font-weight: 400
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25)
+    
+    @include placeholder()
+      color: #797979
+      font-size: 18px
+      font-weight: 400
+
+
+  &__submit
+    @include resetbutton()
+    padding-top: 10px
+    padding-bottom: 14px
+    height: 51px
+    background: #09A868 
+    font-size: 15px
+    font-weight: 700
+    border-radius: 25px
+    
+  &__privacy
+    margin-top: 20px
+    
+    label
+      color: #ffffff
+      font-size: 14px
+      font-weight: 400
+      cursor: pointer
+    input
+      @include resetbutton()
+      display: none
+      
+      &:checked + span
+      
+        &:before
+          opacity: 0
+          @include tr(all .3s ease)
+          
+        &:after
+          opacity: 1
+          @include tr(all .3s ease)
+        
+    span
+      position: relative
+      padding-left: 24px
+      display: block
+      line-height: 1.2 
+      
+      &:before,
+      &:after
+        position: absolute
+        top: 0
+        left: 0
+        content: ""
+        @include tr(all .3s ease)
+         
+      &:before
+        z-index: 1
+        width: 15px
+        height: 15px
+        border: 1px solid #000000
+        background-color: #fdd408
+        opacity: 1
+
+      &:after
+        z-index: 0
+        opacity: 0
+        
+.form_calc
+  position: relative
+  .form__field_radio
+    margin-right: 0
+    margin-bottom: 0
+  
+  .form__submit
+    position: absolute
+    bottom: -23px
+    left: 50%
+    padding-top: 16px
+    padding-right: 130px
+    padding-left: 130px
+    transform: translateX(-50%)
+    
+    @include r(425px)
+      padding-right: 30px
+      padding-left: 30px
+      
+
+.form-general
+  &__form
+    padding-top: 47px
+    padding-right: 40px
+    padding-bottom: 40px
+    padding-left: 40px
+    width: 336px
+    background-color: #ffffff
+    border-radius: 18px
+    box-shadow: 1px 2px 35px rgba(0, 0, 0, 0.21)
+  &__row
+    width: 100%
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    flex-wrap: wrap
+  
+  &__field
+    flex-grow: 1
+  
+  &__field_input
+    margin-bottom: 11px
+    width: 100%
+    
+  &__field_privacy
+    margin-top: 22px
+
+  &__input
+    border: 1px solid #e0e0e0
+    padding-top: 20px
+    padding-right: 0px
+    padding-bottom: 18px
+    padding-left: 20px
+    width: 100%
+    height: 49px
+    background-color: #f4f4f4
+    color: #b8b8b8
+    font-size: 13px
+    font-weight: 400
+    border-radius: 8px
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06)
+    
+    @include placeholder()
+      color: #b8b8b8
+      font-size: 13px
+      font-weight: 400
+      
+
+      
+    
+  &__checkbox-w,
+  &__radio-w,
+    display: flex
+    align-items: flex-start
+  
+  &__checkbox-w
+    margin-right: 20px
+
+    
+  &__field_checkbox,
+  &__field_radio,
+
+    margin-right: 13px
+    
+  &__checkbox,
+  &__radio
+    display: none
+    
+    &:checked + .form-general__checkbox-element,
+    &:checked + .form-general__radio-element,
+      
+      &:before,
+      &:after
+        display: block
+      
+  &__checkbox-element,
+  &__radio-element
+    position: relative
+    display: block
+    border: 1px solid #e0e0e0
+    width: 18px
+    height: 18px
+    background-color: #f4f4f4
+    border-radius: 4px
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06)
+  
+    &:after,
+    &:before
+      position: absolute
+      top: -1px
+      left: -1px
+      content: "" 
+      border-radius: 4px
+
+    &:after
+      width: 18px
+      height: 18px
+      display: none
+      background-color: #09a868
+      content: "" 
+      border-radius: 4px
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06)
+
+    &:before
+      z-index: 1
+      top: 50%
+      left: 50%
+      width: 8px
+      height: 8px
+      display: none
+      background: #fff 
+      border-radius: 50%
+      transform: translate(-50%, -50%)
+
+  &__radio-element
+    border: 1px solid #e0e0e0
+    width: 18px
+    height: 18px
+    background-color: #f4f4f4
+    border-radius: 50%
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06)
+    
+    &:after,
+    &:before
+      position: absolute
+      top: -1px
+      left: -1px
+      content: "" 
+      border-radius: 50%
+
+    &:after
+      width: 18px
+      height: 18px
+      background-color: #09a868
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.06)
+
+    &:before
+      z-index: 1
+      top: 50%
+      left: 50%
+      width: 6px
+      height: 6px
+      display: none
+      background: #fff 
+      border-radius: 50%
+      transform: translate(-50%, -50%)
+    
+  &__privacy-label
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    
+  &__privacy-text
+    margin-top: -2px
+    color: #1e1d1d
+    font-size: 11px
+    font-weight: 400
+    line-height: 1.45
+
+  &__submit
+    margin-top: 30px
+    width: 100%
+    height: 47px
+    flex-grow: 1
+    text-align: center
+    border-radius: 20px  
+
+
+      

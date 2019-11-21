@@ -1,0 +1,74 @@
+.latest-news
+  border-top: 1px solid #fab000 
+  // padding-top: 0
+  padding-top: 38px
+  overflow: hidden
+  
+  &__slider
+    position: relative
+    height: 100%
+    overflow: hidden
+
+
+  &__article
+    // padding-top: 38px
+    padding-top: 25px
+    padding-bottom: 25px
+    // padding-bottom: 10px
+    color: #333 
+
+  &__article-date
+    margin-bottom: 16px
+    color: #999999
+    font-size: 13px
+    font-weight: 300
+    line-height: 1
+  &__article-link
+    display: block
+    @include tr(all .3s ease)
+    &:hover
+      @include tr(all .3s ease)
+      .latest-news__article-title
+        color: lighten(#333, 30)
+        @include tr(all .3s ease)
+
+  &__article-title
+    font-size: 16px
+    font-weight: 500
+    line-height: 1.625
+    @include tr(all .3s ease)
+
+  .slick-arrow
+    width: 100%
+    height: 30px
+    background-color: #ffffff
+    &:before
+      display: none
+    &:after
+      position: absolute
+      top: 50%
+      left: 50%
+      content: "" 
+      @include bg($arrow-down)
+      text-indent: -9999px
+      transform: translate(-50%, -50%)
+  // .slick-list
+  //   height: 100vh !important
+
+
+
+  .slick-prev,
+    top: 0
+    right: 0
+    left: 0
+    display: none !important
+    &:before,
+    &:after
+      display: none
+  .slick-next
+    top: auto
+    // bottom: -14px
+    bottom: -4px
+    right: 0
+    left: 0
+    

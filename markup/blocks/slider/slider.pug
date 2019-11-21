@@ -1,0 +1,39 @@
+mixin slider(data)
+  .slider
+    .slider__nav.container
+      .slider__arrow-w.slider__arrow-w_prev
+        button.slider__arrow.slider__arrow_prev 
+          != pugHelpers.Icon.call(locals, {iconName: 'vertical-slider-arrow', className: 'slider__arrow-icon', iconWidth: '18', iconHeight: '12'})
+
+      .slider__arrow-w.slider__arrow-w_next
+        button.slider__arrow.slider__arrow_next
+          != pugHelpers.Icon.call(locals, {iconName: 'vertical-slider-arrow', className: 'slider__arrow-icon', iconWidth: '18', iconHeight: '12'})
+
+
+    .slider__object
+      .slider__item
+        img.slider__image(src="assets/images/content/slider-image-1.jpg", alt="")
+        .slider__container.container.row.row_start
+          .slider__w
+            .slider__top Духовность Церкви
+            h2.slider__title.title.title_medium 
+              a.link(href='#') Намерения Святого Отца
+            .slider__text.text Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+
+      .slider__item
+        img.slider__image(src="assets/images/content/slider-image-1.jpg", alt="")
+        .slider__container.container.row.row_start
+          .slider__w
+            .slider__top Духовность Церкви
+            h2.slider__title.title.title_medium 
+              a.link(href='#') Намерения Святого Отца 2
+            .slider__text.text Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+
+      .slider__item
+        img.slider__image(src="assets/images/content/slider-image-1.jpg", alt="")
+        .slider__container.container.row.row_start
+          .slider__w
+            .slider__top Духовность Церкви 
+            h2.slider__title.title.title_medium 
+              a.link(href='#') Намерения Святого Отца 3
+            .slider__text.text Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.

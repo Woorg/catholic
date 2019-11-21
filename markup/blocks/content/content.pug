@@ -1,0 +1,183 @@
+mixin content(data)
+  .content&attributes(attributes)
+    .blocks
+      .block
+        .block__top
+          .block__title Litecoin
+            img.block__title-icon(src="assets/images/general/litecoin-icon.png", alt="")
+          .block__balance Баланс:      
+            span 11.000105799 LTC
+          a.block__predict.button.button_secondary(href="#") Прогноз заработка
+            .block__result.block__result_litecoin
+              .block__result-coin
+                .block__result-w
+                  .block__result-icon
+                    img(src="assets/images/general/litecoin-icon.png", alt="")
+                  .block__result-title Litecoin
+              ul.block__result-list
+                li.block__result-item
+                  .block__result-period 1 день
+                  .block__result-val 0.0000600
+                  
+                li.block__result-item
+                  .block__result-period 1 месяц
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 3 месяца
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 6 месяцев
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 1 год
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 2 года
+                  .block__result-val 0.0000600
+
+        .block__bottom
+          .block__range-title Установить мощность
+          
+          .block__range-w
+
+            .block__range-slider
+          
+            #litecoin-range-value.block__range-power 30 %
+          
+          .block__buttons
+            a.block__button.block__button_first(href="#") Обменять на Fm/s
+              .block__button-badge 2%
+
+            a.block__button.block__button_second(href="#") Вывести средства
+
+      .block
+        .block__top
+          .block__title Dogecoin
+            != pugHelpers.Icon.call(locals, {iconName: 'dogecoin-icon', className: 'block__title-icon', iconWidth: '21', iconHeight: '14'})
+          .block__balance Баланс:      
+            span 11.000105799 LTC
+          a.block__predict.button.button_secondary(href="#") Прогноз заработка
+            .block__result.block__result_dogecoin
+              .block__result-coin
+                .block__result-w
+                  != pugHelpers.Icon.call(locals, {iconName: 'dogecoin-icon', className: 'block__result-icon', iconWidth: '21', iconHeight: '14'})
+                  .block__result-title Dogecoin
+              ul.block__result-list
+                li.block__result-item
+                  .block__result-period 1 день
+                  .block__result-val 0.0000600
+                  
+                li.block__result-item
+                  .block__result-period 1 месяц
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 3 месяца
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 6 месяцев
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 1 год
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 2 года
+                  .block__result-val 0.0000600
+
+        .block__bottom
+          .block__range-title Установить мощность
+          
+          .block__range-w
+
+            .block__range-slider
+          
+            #dogecoin-range-value.block__range-power 30 %
+          
+          .block__buttons
+            a.block__button.block__button_first(href="#") Обменять на Fm/s
+              .block__button-badge 2%
+
+            a.block__button.block__button_second(href="#") Вывести средства
+
+      .block.block_usd
+        .block__top
+          .block__title USD
+            .block__title-icon $
+
+          .block__balance Баланс:      
+            span 11.000105799 LTC
+          a.block__predict.button.button_secondary(href="#") Прогноз заработка
+            .block__result.block__result_usd
+              .block__result-coin
+                .block__result-w
+                  .block__result-icon $
+                  .block__result-title USD
+              ul.block__result-list
+                li.block__result-item
+                  .block__result-period 1 день
+                  .block__result-val 0.0000600
+                  
+                li.block__result-item
+                  .block__result-period 1 месяц
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 3 месяца
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 6 месяцев
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 1 год
+                  .block__result-val 0.0000600
+
+                li.block__result-item
+                  .block__result-period 2 года
+                  .block__result-val 0.0000600
+
+        .block__bottom
+          .block__range-title Установить мощность
+          
+          .block__range-w
+
+            .block__range-slider
+          
+            #usd-range-value.block__range-power 30 %
+          
+          .block__buttons
+            a.block__button.block__button_first(href="#") Обменять на Fm/s
+              .block__button-badge 2%
+
+            a.block__button.block__button_second(href="#") Вывести средства
+
+      .block.block_total
+        .block__top
+          .block__title Всего заработано
+
+        dl.block__list
+          .block__item.block__item_lite
+            dt.block__term Litecoin
+              img.block__term-icon(src="assets/images/general/litecoin-icon.png", alt="")
+            dd.block__desc 12.67 LTC
+
+          .block__item.block__item_doge
+            dt.block__term Dogecoin
+              != pugHelpers.Icon.call(locals, {iconName: 'dogecoin-icon', className: 'block__term-icon', iconWidth: '24', iconHeight: '24'})
+            dd.block__desc 23 453 Doge
+
+          .block__item.block__item_usd
+            dt.block__term USD
+              .block__term-icon $
+            dd.block__desc 635 $
+            
+
+

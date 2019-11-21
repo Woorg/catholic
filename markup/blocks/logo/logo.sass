@@ -1,0 +1,28 @@
+.logo
+  position: relative
+  padding-top: 10px
+  padding-bottom: 5px
+  padding-left: 44px
+  max-width: 236px
+  width: 236px
+  // width: 100%
+  color: #1b242c
+  font-family: $m
+  font-size: 12px
+  line-height: 1.5
+  text-transform: uppercase
+  text-decoration: none
+  &:after
+    position: absolute
+    top: 0
+    left: 0
+    content: ''
+    @include bg($logo) 
+  &__title,
+  &__city
+    display: block
+  &__title
+    font-weight: 500
+  &__city
+    font-weight: 300
+
