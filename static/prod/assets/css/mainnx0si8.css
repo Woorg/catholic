@@ -665,7 +665,7 @@ img {
   top: 0;
   left: 0;
   content: '';
-  background-image: url(../images/png-sprite/96dpi/sprite58vgyh.png);
+  background-image: url(../images/png-sprite/96dpi/spritenx0si8.png);
   background-position: 0px 0px;
   width: 34px;
   height: 68px;
@@ -675,13 +675,13 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .logo:after {
-    background-image: url(../images/png-sprite/192dpi/sprite58vgyh.png);
+    background-image: url(../images/png-sprite/192dpi/spritenx0si8.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .logo:after {
-    background-image: url(../images/png-sprite/288dpi/sprite58vgyh.png);
+    background-image: url(../images/png-sprite/288dpi/spritenx0si8.png);
   }
 }
 
@@ -703,7 +703,7 @@ img {
 }
 
 .logo_second:after {
-  background-image: url(../images/png-sprite/96dpi/sprite58vgyh.png);
+  background-image: url(../images/png-sprite/96dpi/spritenx0si8.png);
   background-position: -38px 0px;
   width: 30px;
   height: 60px;
@@ -713,13 +713,13 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .logo_second:after {
-    background-image: url(../images/png-sprite/192dpi/sprite58vgyh.png);
+    background-image: url(../images/png-sprite/192dpi/spritenx0si8.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .logo_second:after {
-    background-image: url(../images/png-sprite/288dpi/sprite58vgyh.png);
+    background-image: url(../images/png-sprite/288dpi/spritenx0si8.png);
   }
 }
 
@@ -951,8 +951,7 @@ img {
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 15px;
-  max-width: 240px;
-  width: 100%;
+  width: 240px;
   text-align: right;
   background: #f7f3e7;
   -webkit-transition: all 0.3s ease;
@@ -1274,7 +1273,7 @@ img {
   top: 50%;
   left: 50%;
   content: "";
-  background-image: url(../images/png-sprite/96dpi/sprite58vgyh.png);
+  background-image: url(../images/png-sprite/96dpi/spritenx0si8.png);
   background-position: -72px 0px;
   width: 18px;
   height: 10px;
@@ -1288,13 +1287,13 @@ img {
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx), only screen and (min-device-pixel-ratio: 2) {
   .latest-news .slick-arrow:after {
-    background-image: url(../images/png-sprite/192dpi/sprite58vgyh.png);
+    background-image: url(../images/png-sprite/192dpi/spritenx0si8.png);
   }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-webkit-min-device-pixel-ratio: 3), only screen and (-o-min-device-pixel-ratio: 3/1), only screen and (min-resolution: 288dpi), only screen and (min-resolution: 3dppx), only screen and (min-device-pixel-ratio: 3) {
   .latest-news .slick-arrow:after {
-    background-image: url(../images/png-sprite/288dpi/sprite58vgyh.png);
+    background-image: url(../images/png-sprite/288dpi/spritenx0si8.png);
   }
 }
 
