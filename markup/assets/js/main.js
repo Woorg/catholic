@@ -162,14 +162,15 @@ import svg4everybody from 'svg4everybody';
         // lazyLoad: 'ondemand',
         infinite: true,
         slidesToShow: 3,
-        // slidesToScroll: 1,
-        speed: 600,
-        centerMode: true,
-        centerPadding: '20px',
+        slidesToScroll: 3,
+        speed: 300,
+        // centerMode: true,
+        // centerPadding: '20px',
+        draggable: true,
         // fade: true,
         // variableWidth: true,
         adaptiveHeight: true,
-        // waitForAnimate: false,
+        waitForAnimate: false,
         // focusOnSelect: true,
 
         responsive: [
@@ -182,7 +183,7 @@ import svg4everybody from 'svg4everybody';
         {
           breakpoint: 834,
           settings: {
-            slidesToShow: 3.6,
+            slidesToShow: 3,
           }
         }]
       });

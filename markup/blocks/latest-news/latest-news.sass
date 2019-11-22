@@ -5,8 +5,8 @@
   overflow: hidden
   @include r(834px)
     border-bottom: 1px solid #fab000
-    padding-bottom: 45px
-  //   padding-top: 0
+    padding-top: 0
+    // padding-bottom: 45px
     
   &__slider
     position: relative
@@ -17,8 +17,10 @@
 
   &__article
     // padding-top: 38px
-    padding-top: 25px
-    padding-bottom: 25px
+    // padding-top: 25px
+    padding-top: 30px
+    // padding-bottom: 25px
+    height: 180px
     // padding-bottom: 10px
     color: #333 
 
@@ -42,6 +44,10 @@
     font-weight: 500
     line-height: 1.625
     @include tr(all .3s ease)
+    
+  .slick-vertical 
+    .slick-slide
+      height: 160px
 
   .slick-arrow
     width: 100%
@@ -60,7 +66,7 @@
   // .slick-list
   //   height: 100vh !important
 
-
+  
 
   .slick-prev,
     top: 0
